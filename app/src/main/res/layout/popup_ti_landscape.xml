@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- popup_ti_landscape -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_ti_l"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 팝업 배경 이미지 -->
+        <ImageView
+            android:src="@drawable/popup_background_img_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:weightSum="1" >
+
+            <!-- 왼쪽 여백 -->
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1" />
+            <!-- 왼쪽 여백 -->
+
+            <!-- main -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="vertical" >
+
+                    <!-- 상단 여백 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.05" />
+                    <!-- 상단 여백 -->
+
+                    <!-- 문제 문장 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/_ti_question_l"
+                            android:background="@drawable/popup_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:autoSizeMaxTextSize="50sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:maxLines="3"
+                            android:lineSpacingExtra="5dp"
+                            android:fontFamily="@font/scdream3"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                    <!-- 문제 문장 -->
+
+                    <!-- main -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.65" >
+
+                        <!-- 보기 선택 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"  >
+
+                            <ImageView
+                                android:id="@+id/_ti_op_l1"
+                                android:background="@drawable/round_dotborder_thin"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:clickable="true" />
+
+                            <ImageView
+                                android:id="@+id/_ti_op_l2"
+                                android:background="@drawable/round_dotborder_thin"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:clickable="true" />
+
+                            <ImageView
+                                android:id="@+id/_ti_op_l3"
+                                android:background="@drawable/round_dotborder_thin"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:clickable="true" />
+
+                            <ImageView
+                                android:id="@+id/_ti_op_l4"
+                                android:background="@drawable/round_dotborder_thin"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:clickable="true" />
+
+                        </LinearLayout>
+                        <!-- 보기 선택 -->
+
+                    </LinearLayout>
+                    <!-- main -->
+
+                    <!-- 하단 여백 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+                    <!-- 하단 여백 -->
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- main -->
+
+            <!-- 오른쪽 여백 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+            <!-- 오른쪽 여백 -->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

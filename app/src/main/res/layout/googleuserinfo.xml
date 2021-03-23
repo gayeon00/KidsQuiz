@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+
+    <!-- 라인로고 -->
+    <ImageView
+        android:src="@drawable/kidsquiz_logo_line"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="회원정보"
+        android:textFontWeight="300"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeStepGranularity="1sp"
+        android:textColor="@color/dark_gray"
+        android:fontFamily="@font/scdream3" />
+
+    <!-- 닉네임 입력 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nickname1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="닉네임"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/scdream3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 추천인 코드 입력 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recommend1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="추천인코드"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/scdream3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:background="@color/dark_orange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="저장하기"
+        android:autoSizeMaxTextSize="15sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/dark_gray"
+        android:fontFamily="@font/scdream3" />
+
+</LinearLayout>

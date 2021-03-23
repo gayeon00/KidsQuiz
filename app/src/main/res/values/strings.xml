@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">KidsQuiz</string>
+    <string name="noti_channel_act_popup">popup</string>
+    <string name="noti_channel_main">main</string>
+    <string name="noti_channel_resumetimer">resumetimer</string>
+    <string name="loading" >로딩중</string>
+    <string name="menu_download" >다운로드</string>
+    <string name="menu_all" >전체</string>
+    <string name="title_home">홈</string>
+    <string name="title_statistics">통계</string>
+    <string name="title_mypage">마이페이지</string>
+    <string name="manage_passcode">Manage passcode</string>
+    <string name="enter_passcode">비밀번호를 입력해주세요.</string>
+    <string name="enter_old_passcode">현재 비밀번호를 입력해주세요.</string>
+    <string name="reenter_passcode">비밀번호를 다시 입력해주세요.</string>
+    <string name="change_passcode">비밀번호 변경</string>
+    <string name="setup_passcode">비밀번호가 설정되었습니다.</string>
+    <string name="passcode_wrong">잘못된 비밀번호입니다. 다시 입력해주세요.</string>
+    <string name="disable_passcode">비밀번호 제거</string>
+    <string name="enable_passcode">비밀번호 설정</string>
+    <string name="subscription_period_prompt">구독 기간을 선택해주세요.</string>
+    <string name="subscription_resignup_prompt">To reactivate your subscription, select your subscription period</string>
+    <string name="subscription_update_prompt">To change your subscription, select your new subscription period</string>
+    <string name="subscription_period_monthly">1개월 구독 (2000원)</string>
+    <string name="subscription_period_threemonth">Three Month $4.99</string>
+    <string name="subscription_period_sixmonth">Six Month $6.99</string>
+    <string name="subscription_period_yearly">Yearly $11.99</string>
+    <string name="subscription_prompt_continue">Continue</string>
+    <string name="subscription_prompt_cancel">Cancel</string>
+    <string name="content_description_app_loading_image">App loading image</string>
+    <string name="content_description_title_image">80\'s Video Game Style Car Logo</string>
+    <string name="content_desc_gas_gauge_indicator">Gas gauge indicator</string>
+    <string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>
+</resources>

@@ -1,0 +1,45 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/scdream3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="NumberPickerCustom">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/scdream3</item>
+        <item name="android:editTextColor">@color/orange</item>
+    </style>
+    <style name="PasscodeInputIStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:background">@drawable/lock_edittext_background</item>
+        <item name="android:inputType">textPassword|number</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PasscodeButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#FF464646</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#00ff0000</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+</resources>

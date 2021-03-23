@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:id="@+id/point_cliked_top_bar"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="적립금 사용"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white"
+                android:fontFamily="@font/scdream3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/point_cliked_main"
+            android:layout_below="@id/point_cliked_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                android:id="@+id/clicked_itemimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kidsquiz_character"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이름 : "
+                        android:textColor="@color/dark_gray"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/scdream3" />
+
+                    <TextView
+                        android:id="@+id/clicked_itemname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사랑에 빠진 딸기"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/scdream3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가격 : "
+                        android:textColor="@color/dark_gray"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/scdream3" />
+
+                    <TextView
+                        android:id="@+id/clicked_itemprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3500"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/scdream3" />
+
+                    <TextView
+                        android:id="@+id/p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="p"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/scdream3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_dotborder_thin"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <!--현재 포인트-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="현재 포인트"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/point_now"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="right"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="p"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--소멸 예정 포인트-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="소멸 예정 포인트"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/point_delete"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="right"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="p"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--남은 포인트-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="남은 포인트"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/point_remain"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="right"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="p"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/dark_gray"
+                            android:fontFamily="@font/scdream3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="상품을 받으실 전화번호를 입력해주세요.\n포인트 확인 후 2~3일 이내로\n입력하신 전화번호를 통해 상품이 전달됩니다."
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra="10dp"
+                    android:fontFamily="@font/scdream3"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/point_phoneText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="전화번호"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <Button
+                    android:id="@+id/point_sendButton"
+                    android:background="@color/dark_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text="구매하기"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

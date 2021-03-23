@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 상단바 -->
+    <LinearLayout
+        android:id="@+id/subscribe_cancel_top_bar"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="구독 취소"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scdream3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/subscribe_cancel_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/subscribe_cancel_caution"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="키즈퀴즈 어플 내에서는 구독을 취소할 수 없습니다.\n구독 취소를 원하시면 아래의 안내사항을 따라주세요."
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:lineSpacingExtra="15dp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3" />
+
+            <ImageView
+                android:src="@drawable/mypage_subscribe_cancel_img"
+                android:layout_below="@id/subscribe_cancel_caution"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true" />
+
+        </RelativeLayout>
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/ad_subscribe_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
+    </LinearLayout>
+
+</RelativeLayout>

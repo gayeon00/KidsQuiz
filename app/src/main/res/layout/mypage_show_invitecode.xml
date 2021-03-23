@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/show_invitecode"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:id="@+id/show_invitecode_top_bar"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="친구초대 이벤트"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white"
+                android:fontFamily="@font/scdream3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/show_invitecode_top_bar"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/mypage_show_invitecode_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="25dp"
+                android:adjustViewBounds="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/invitecode"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <!-- 추천코드 복사 버튼 -->
+                <Button
+                    android:id="@+id/copy"
+                    android:background="@color/dark_orange"
+                    android:layout_below="@id/invitecode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="클립보드에 복사"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/ad_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+</RelativeLayout>

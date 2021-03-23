@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:id="@+id/home_top_bar"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" >
+
+            <ImageView
+                android:src="@drawable/kidsquiz_logo_line"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_1"
+            android:layout_below="@+id/home_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 나이 설정 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="우리 아이는 몇 살 인가요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/scdream3"
+                    android:textColor="@color/orange" />
+
+                <LinearLayout
+                    android:background="@drawable/number_picker_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="  만  "
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/scdream3"
+                        android:textColor="@color/orange" />
+
+                    <NumberPicker
+                        android:id="@+id/numberpicker_age_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:theme="@style/NumberPickerCustom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="  세  "
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/scdream3"
+                        android:textColor="@color/orange" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 팝업 시간 간격 설정 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:text="몇 분에 한 번씩 퀴즈를 풀까요?"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/scdream3"
+                        android:textColor="@color/orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/number_picker_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center" >
+
+                    <NumberPicker
+                        android:id="@+id/numberpicker_min_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:theme="@style/NumberPickerCustom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="분"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/scdream3"
+                        android:textColor="@color/orange" />
+
+                    <NumberPicker
+                        android:id="@+id/numberpicker_sec_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:theme="@style/NumberPickerCustom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="초"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/scdream3"
+                        android:textColor="@color/orange" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 백그라운드로 보내기 체크박스 -->
+                <CheckBox
+                    android:id="@+id/toHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="퀴즈 시작 시 홈 화면으로 바로 이동합니다"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3"
+                    android:checked="false" />
+
+                <!-- 퀴즈 시작 버튼 -->
+                <Button
+                    android:id="@+id/btn_starttimer"
+                    android:background="@drawable/btn_selector"
+                    android:enabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="퀴즈를 풀래요"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/scdream3" />
+
+                <!-- 퀴즈 중지 버튼 -->
+                <Button
+                    android:id="@+id/btn_stoptimer"
+                    android:background="@drawable/btn_selector"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="퀴즈를 그만 풀래요"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="18sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/scdream3" />
+
+                <TextView
+                    android:id="@+id/whatproblem"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="어떤 문제들이 출제되나요?"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/scdream3"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/ad_home"
+            android:layout_below="@+id/home_1"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="match_parent"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
+    </RelativeLayout>
+
+</ScrollView>

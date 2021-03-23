@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "118291143114",
+    "firebase_url": "https://kidsquiz-master-388e3.firebaseio.com",
+    "project_id": "kidsquiz-master-388e3",
+    "storage_bucket": "kidsquiz-master-388e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118291143114:android:59496c374634eb04ff5733",
+        "android_client_info": {
+          "package_name": "com.roaringcat.kidsquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118291143114-1r30tqsl1tfmg0hic5jaannen1jr792d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "f695ba991525a20766e9854c9f4f5be84dfd8dbe"
+          }
+        },
+        {
+          "client_id": "118291143114-3bvnnk6ca0rjj28dh319bb8tv3cb6lpa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "d7d8efbabb5dfe99213b8c1fc5bbe3ce8c7a309c"
+          }
+        },
+        {
+          "client_id": "118291143114-4v9t7u2pibm2djsv016v3q981dffqr6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "750b05f4db74dd40c4d4880f654cab49908a11c4"
+          }
+        },
+        {
+          "client_id": "118291143114-hj806r0b5fieotdkghamsqf3lhjn9slf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "a885e7e27d62ab545c6ba26fffb0553c65dcb49e"
+          }
+        },
+        {
+          "client_id": "118291143114-inor74m2no5i4qppb046miciiris8l3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "979367ee9b0123375ae5cef1ac9caaa8a8570c15"
+          }
+        },
+        {
+          "client_id": "118291143114-int2sd64pi00870k3olkebh59va3jq4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "1549fd67ef8b616bdfcf232f896dee4fa5aada66"
+          }
+        },
+        {
+          "client_id": "118291143114-qab850rqmp9l7hsk5uphbgcm2t24dvu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "fe7627659c7f92d80d884386ab595e3000b8a05a"
+          }
+        },
+        {
+          "client_id": "118291143114-st6u04gfntl9st3ct8n355d6fp3u77fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "d7bad0fc2f6d958a5434722198f21c68864f15b2"
+          }
+        },
+        {
+          "client_id": "118291143114-ue7hkpagmp6ekk8g5snpoh833o4kcdun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaringcat.kidsquiz",
+            "certificate_hash": "3083a5f0ad32215f26425e76fea72cab8556da06"
+          }
+        },
+        {
+          "client_id": "118291143114-r1cjlmsjiotgjann60ob1e3ek7mpkj8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdOUO5_XzSCAF6jG0IyUaBHMs4_dAA-F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118291143114-r1cjlmsjiotgjann60ob1e3ek7mpkj8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9350891168282170~5512537782"
+    }
+  ],
+  "configuration_version": "1"
+}

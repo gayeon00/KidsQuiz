@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailed_stat"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lemon"
+        android:orientation="vertical" >
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="통계"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white"
+                android:fontFamily="@font/scdream3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/stat_round_background"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:text="정답률"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="15sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/scdream3" />
+
+        <LinearLayout
+            android:background="@drawable/statistics_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <!-- 국어 정답률 그래프 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="우리 아이\n국어를 얼마나 잘 하고 있을까요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra ="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:gravity="center" >
+
+                    <ProgressBar
+                        android:id="@+id/kor_circleProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="70"
+                        android:layout_centerInParent="true"
+                        android:progressDrawable="@drawable/circle_progressbar_kor"
+                        android:secondaryProgress="100" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="국어 정답률"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/korean"
+                            android:fontFamily="@font/scdream3"  />
+
+                        <TextView
+                            android:id="@+id/kor_correct_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:textColor="@color/korean"
+                            android:fontFamily="@font/scdream3"  />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:src="@drawable/dash_line"
+                    android:layerType="software"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+            <!-- 수학 정답률 그래프 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="우리 아이\n수학을 얼마나 잘 하고 있을까요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra ="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:gravity="center" >
+
+                    <ProgressBar
+                        android:id="@+id/mat_circleProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="70"
+                        android:layout_centerInParent="true"
+                        android:progressDrawable="@drawable/circle_progressbar_mat"
+                        android:secondaryProgress="100" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="수학 정답률"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/math"
+                            android:fontFamily="@font/scdream3"  />
+
+                        <TextView
+                            android:id="@+id/mat_correct_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:textColor="@color/math"
+                            android:fontFamily="@font/scdream3"  />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:src="@drawable/dash_line"
+                    android:layerType="software"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+            <!-- 창의력 정답률 그래프 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="우리 아이\n창의력이 얼마나 높을까요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra ="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ProgressBar
+                        android:id="@+id/per_circleProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="70"
+                        android:layout_centerInParent="true"
+                        android:progressDrawable="@drawable/circle_progressbar_per"
+                        android:secondaryProgress="100" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="창의력 정답률"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="@color/perception"
+                            android:fontFamily="@font/scdream3"  />
+
+                        <TextView
+                            android:id="@+id/per_correct_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:textColor="@color/perception"
+                            android:fontFamily="@font/scdream3"  />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/stat_round_background"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:text="백분위"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="15sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/scdream3"  />
+
+        <LinearLayout
+            android:background="@drawable/statistics_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="우리 아이는 또래 아이들 중\n국어 점수가 상위 몇 퍼센트 일까요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra ="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="국어 점수 상위"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:textColor="@color/korean"
+                        android:fontFamily="@font/scdream3" />
+
+                    <TextView
+                        android:id="@+id/kor_percentile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:textColor="@color/korean"
+                        android:fontFamily="@font/scdream3" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/kor_horizontal_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/horizontal_progressbar_kor"
+                    android:rotation="270"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/dash_line"
+                android:layerType="software"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="우리 아이는 또래 아이들 중\n수학 점수가 상위 몇 퍼센트 일까요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra ="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="수학 점수 상위"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:textColor="@color/math"
+                        android:fontFamily="@font/scdream3"/>
+
+                    <TextView
+                        android:id="@+id/mat_percentile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:textColor="@color/math"
+                        android:fontFamily="@font/scdream3" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/mat_horizontal_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/horizontal_progressbar_mat"
+                    android:rotation="270"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginBottom="10dp"  />
+
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/dash_line"
+                android:layerType="software"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="우리 아이는 또래 아이들 중\n창의력 점수가 상위 몇 퍼센트 일까요?"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:lineSpacingExtra ="15dp"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/scdream3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="창의력 점수 상위"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:textColor="@color/perception"
+                        android:fontFamily="@font/scdream3" />
+
+                    <TextView
+                        android:id="@+id/per_percentile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:textColor="@color/perception"
+                        android:fontFamily="@font/scdream3" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/per_horizontal_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/horizontal_progressbar_per"
+                    android:rotation="270"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginBottom="30dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_share"
+            android:background="@drawable/btn_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="분석 결과를 친구들과 공유해보세요!"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/scdream3" />
+
+    </LinearLayout>
+
+</ScrollView>

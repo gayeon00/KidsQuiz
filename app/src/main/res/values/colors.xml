@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffce3c</color>
+    <color name="colorPrimaryDark">#ffce3c</color>
+    <color name="colorAccent">#218997</color>
+    <color name="orange">#ff9234</color>
+    <color name="dark_orange">#F5C557</color>
+    <color name="apricot">#fad8b0</color>
+    <color name="ivory">#FFFAF0</color>
+    <color name="yellow">#ffce3c</color>
+    <color name="lemon">#fefed5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#FFE5E5E5</color>
+    <color name="gray">#5D5D5D</color>
+    <color name="dark_gray">#4A4A4A</color>
+    <color name="black">#FF000000</color>
+    <color name="light_blue">#FF78c8e6</color>
+    <color name="deep_blue">#91BDE2</color>F
+    <color name="light_purple">#D2BCE1</color>
+    <color name="deep_purple">#9575CD</color>
+    <color name="korean">#3f97ab</color>
+    <color name="math">#2e405a</color>
+    <color name="perception">#fc9680</color>
+    <color name="promotion">#ffe6e6</color>
+    <color name="promo_button">#f08080</color>
+    <color name="promo_text">#ff6464</color>
+    <color name="naver_green">#1EC800</color>
+</resources>

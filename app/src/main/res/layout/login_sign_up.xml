@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 라인로고 -->
+        <ImageView
+            android:src="@drawable/kidsquiz_logo_line"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textFontWeight="800"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="30sp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeStepGranularity="1sp"
+            android:fontFamily="@font/scdream3"
+            android:textColor="@color/dark_gray" />
+
+        <!-- 이메일 입력창 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:hint="이메일"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 비밀번호 입력창 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEdt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="비밀번호"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 비밀번호 확인창 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordcheckEdt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="비밀번호 확인"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 닉네임 입력창 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLength="10"
+                android:hint="닉네임"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 추천인 코드 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recommend"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="추천인코드"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/check_info_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="개인정보 수집 및 이용에 동의합니다. (필수)"
+                android:autoSizeMaxTextSize="13sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/scdream3"
+                android:checked="false" />
+
+            <Button
+                android:id="@+id/btn_show_info_collect"
+                android:background="@color/light_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="전문보기"
+                android:autoSizeMaxTextSize="13sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/scdream3" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_signup_submit"
+            android:background="@color/dark_orange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="가입하기"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/scdream3" />
+
+    </LinearLayout>
+
+</ScrollView>

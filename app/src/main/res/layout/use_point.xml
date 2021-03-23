@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 상단바 -->
+    <LinearLayout
+        android:id="@+id/use_point_top_bar"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="적립금 사용"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scdream3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/use_point_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="적립금을 통해 다양한 혜택을 누려보세요!\n자세한 사항은 추후 업데이트 예정입니다."
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingExtra="10dp"
+            android:fontFamily="@font/scdream3"
+            android:textColor="@color/dark_gray" />
+
+    </LinearLayout>
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/ad_use_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+</RelativeLayout>
