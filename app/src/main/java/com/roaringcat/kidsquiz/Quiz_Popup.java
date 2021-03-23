@@ -846,6 +846,8 @@ public class Quiz_Popup extends Service implements Animation.AnimationListener {
 
         pointdb.child("OXdataset").child(user.getUid()).updateChildren(childUpdates);
 
+        //잘 됏을까!!!
+
     }
 
     private void userCorrectIncrement(DatabaseReference databaseReference,int age, String subject){
