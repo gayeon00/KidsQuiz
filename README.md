@@ -1,15 +1,15 @@
 # KidsQuiz
 
-## 📂 프로젝트 소개
+## 프로젝트 소개
 - 팝업 식으로 한글, 수학, 창의력에 대한 4지 선다 퀴즈가 나옴으로서 **영유아 교육 및 스마트폰 사용 관리**를 목적으로 하는 서비스입니다. <br>
 - 최근 맞벌이 가정이 증가함에 따라 육아 중 영유아에 대한 스마트폰 노출이 불가피한 상황입니다. <br>
   이에 영유아의 퀴즈를 통해 영유아의 주의를 환기시켜 부모님들의 염려와 스마트폰 사용에 대한 부정적인 영향을 최소화하기 위한 목적으로 기획하게 되었습니다. <br>
 
-### 📆 개발 인원 및 기간
-- 개발기간 : 2020/04 ~ 2021/01
-- 개발 인원 : 안드로이드 화면 작성 3명, 안드로이드 전반 2명
+### 개발 인원 및 기간
+- 기간 : 2020/04 ~ 2021/01
+- 인원 : 안드로이드 화면 작성 3명, 안드로이드 전반 2명
 
-## 🛠 사용 기술 및 구현 기능
+## 사용 기술 및 구현 기능
 ### 사용 기술 및 tools
 > - Android-Appplication : <img src = "https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white">&nbsp; <img src = "https://img.shields.io/badge/androidstudio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white">&nbsp; <img src = "https://img.shields.io/badge/java-4B4B77?style=for-the-badge">&nbsp;
 
